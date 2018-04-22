@@ -1,0 +1,32 @@
+﻿<Window x:Class="CipherGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CipherGUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="304.155" Width="738">
+    <Grid Margin="3,0,-1,2">
+        <TextBox x:Name="txtInput" HorizontalAlignment="Left" Height="97" Margin="10,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="375"/>
+        <TextBox x:Name="txtOutput" HorizontalAlignment="Left" Height="109" Margin="10,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="375"/>
+        <Label Content="Input:&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="49"/>
+        <Label Content="Output:" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top" Width="58" RenderTransformOrigin="0.31,0.423"/>
+        <Button x:Name="btnEncrypt" Content="Encrypt" HorizontalAlignment="Left" Margin="390,27,0,0" VerticalAlignment="Top" Width="75" Click="btnEncrypt_Click"/>
+        <Button x:Name="btnDecrypt" Content="Decrypt" HorizontalAlignment="Left" Margin="390,95,0,0" VerticalAlignment="Top" Width="75" Click="btnDecrypt_Click"/>
+        <TextBox x:Name="txtKeyN" HorizontalAlignment="Left" Height="23" Margin="595,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <TextBox x:Name="txtKeyE" HorizontalAlignment="Left" Height="23" Margin="595,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <TextBox x:Name="txtKeyD" HorizontalAlignment="Left" Height="23" Margin="595,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <Label Content="Keys:" HorizontalAlignment="Left" Margin="595,28,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label Content="E:" HorizontalAlignment="Left" Margin="571,119,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.263,0.462"/>
+        <Label Content="N:" HorizontalAlignment="Left" Margin="568,59,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.955,0.5"/>
+        <Label Content="D:" HorizontalAlignment="Left" Margin="569,88,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.591,1.731"/>
+        <Button x:Name="btnGenerateKeys" Content="Generate Keys" HorizontalAlignment="Left" Margin="571,150,0,0" VerticalAlignment="Top" Width="83" Click="btnGenerateKeys_Click"/>
+        <CheckBox x:Name="chkNoSpaces" Content="No Spaces" HorizontalAlignment="Left" Margin="390,52,0,0" VerticalAlignment="Top" Checked="chkNoSpaces_Checked" Unchecked="chkNoSpaces_Unchecked"/>
+        <Button x:Name="btnSwitch" Content="Switch" HorizontalAlignment="Left" Margin="407,189,0,0" VerticalAlignment="Top" Width="75" Click="btnSwitch_Click"/>
+        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="407,214,0,0" VerticalAlignment="Top" Width="75" Click="btnClear_Click"/>
+        <Button x:Name="btnCopyToClip" Content="Copy to Clipboard" HorizontalAlignment="Left" Margin="391,239,0,0" VerticalAlignment="Top" Width="104" Click="btnCopyToClip_Click"/>
+        <ProgressBar x:Name="pgrProgress" HorizontalAlignment="Left" Height="23" Margin="537,236,0,0" VerticalAlignment="Top" Width="172"/>
+        <Label Content="Progress:" HorizontalAlignment="Left" Margin="595,210,0,0" VerticalAlignment="Top" Width="60" RenderTransformOrigin="0.917,0.654"/>
+
+    </Grid>
+</Window>
